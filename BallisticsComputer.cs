@@ -13,6 +13,14 @@ public enum ballistic_Mode : byte { highestShot, mostDirect, lowestSpeedArc };
 
 public class BallisticsComputer  {
 
+    /// <summary>
+    /// Computes the needed Vector3 launch velocity needed to hit a world space coordinate target
+    /// </summary>
+    /// <param name="_target">World position of the target to hit, obptained from a screen center raycast for example</param>
+    /// <param name="_position">Projectile Start position</param>
+    /// <param name="_speed">The Rigidbody speed, some projectiles are fired faster than others</param>
+    /// <param name="_ballisticMode">Some options, allows for varied behaviour and various weapons</param>
+    /// <returns>The velocity that needs to be added to the Rigidbody during fire</returns>
     public static Vector3 CalculateVelocityAngleOfLunch(Vector3 _target, Vector3 _position, float _speed, ballistic_Mode _ballisticMode = ballistic_Mode.mostDirect)
     {
         float T = 0;
