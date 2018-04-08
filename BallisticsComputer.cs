@@ -7,8 +7,6 @@
     ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝░
        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum ballistic_Mode : byte { highestShot, mostDirect, lowestSpeedArc };
